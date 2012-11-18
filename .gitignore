@@ -1,0 +1,12 @@
+# sources
+/smictrl.tar.bz2
+
+# fedpkg local build artifacts
+/smictrl/
+/i686/
+/x86_64/
+/smictrl-*.src.rpm
+/.build-*.log
+
+# emacs droppings
+/*~
