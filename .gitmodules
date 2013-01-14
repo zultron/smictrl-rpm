@@ -1,0 +1,3 @@
+[submodule "smictrl-src"]
+	path = smictrl-src
+	url = git://git.kiszka.org/smictrl.git
