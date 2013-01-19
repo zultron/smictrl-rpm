@@ -1,5 +1,5 @@
 # sources
-/smictrl.tar.bz2
+/smictrl-*.tar.bz2
 
 # fedpkg local build artifacts
 /smictrl/
