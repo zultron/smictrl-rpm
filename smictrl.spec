@@ -19,10 +19,10 @@ BuildRequires:  kernel-devel
 BuildRequires:  pciutils-devel
 BuildRequires:  zlib-devel
 
-%define kversion %(rpm -q --qf='%%{version}-%%{release}\\n' \\\
+%define kversion %(rpm -q --qf='%%{version}-%%{release}.%%{arch}\\n' \\\
 	--whatprovides kernel-devel | \\\
 	sed 's/^.* not installed$/42/' | tail -1)
-%global kernelinclude %{_usrsrc}/kernels/%{kversion}.%{_target_cpu}/include
+%global kernelinclude %{_usrsrc}/kernels/%{kversion}/include
 
 
 %description
