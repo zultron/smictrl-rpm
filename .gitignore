@@ -2,7 +2,7 @@
 /smictrl-*.tar.bz2
 
 # fedpkg local build artifacts
-/smictrl/
+/smictrl-0.1/
 /i686/
 /x86_64/
 /smictrl-*.src.rpm
