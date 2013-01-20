@@ -1,0 +1,20 @@
+smictrl can work around SMI interrupts that can cause pauses of
+hundreds of microseconds, unacceptable on realtime systems.
+
+This RPM builds from Jan Kiszka's git repo at
+git://git.kiszka.org/smictrl.git
+
+The tree structure is suitable for being built in koji.
+
+To build:
+
+   git submodule update --init smictrl-src
+   make tarball
+   fedpkg --dist=el6 local
+
+To update:
+
+   # check out a new version in the submodule
+   make
+   # check the specfile to be sure all is good, esp. %changelog
+   fedpkg --dist=el6 local
